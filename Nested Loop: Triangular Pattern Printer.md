@@ -14,8 +14,27 @@ Inside the outer loop, use another for loop to iterate j from 1 to i and print "
 After each inner loop, print a newline character (\n) to move to the next line.
 
 ## Program
-Add Code Here
+```
+#include <stdio.h>
+int main()
+{
+    int n, i, j;
+    printf("Enter the number of rows: ");
+    scanf("%d", &n);
+    for (i = n; i >= 1; i--) {
+        for (j = 1; j <= i; j++) 
+        {
+            printf("$");
+        }
+        printf("\n");
+    }
 
+    return 0;
+}
+
+```
 ## Output
+![image](https://github.com/user-attachments/assets/e5433cbe-a023-4d88-830e-4c490e263399)
 
 ## Result
+C program that prints a triangular pattern of $ symbols using nested loops based on a user-defined value n is written.
