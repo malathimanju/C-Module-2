@@ -24,8 +24,33 @@ d. After the loop, print the factorial value.
 End the program.
 
 ## Program
-Add Code Here
-
+```
+#include <stdio.h>
+void fact() 
+{
+    int i, N;
+    long long factorial = 1;  
+    printf("Enter a positive integer: ");
+    scanf("%d", &N);
+    if (N < 0) 
+    {
+        printf("Factorial is not defined for negative numbers.\n");
+        return;
+    }
+    for (i = 1; i <= N; i++)
+    {
+        factorial *= i;
+    }
+    printf("Factorial of %d is %lld\n", N, factorial);
+}
+int main() 
+{
+    fact(); 
+    return 0; 
+}
+```
 ## Output
+![image](https://github.com/user-attachments/assets/448c32dc-7b0e-4cd5-8537-d4839580e4d5)
 
 ## Result
+C program that calculates the factorial of a given number using a user-defined function is written
